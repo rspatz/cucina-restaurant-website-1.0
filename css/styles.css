@@ -1,0 +1,420 @@
+/* resets */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+/***** Fonts ******/
+
+@font-face {
+	font-family: 'DroidSerif-Bold';
+	src: url('fonts/droid-serif/DroidSerif-Bold.ttf');
+	format: ('true-type');
+}
+
+@font-face {
+	font-family: 'DroidSerif-Regular';
+	src: url('fonts/amble/DroidSerif-Regular.ttf');
+	format: ('true-type');
+}
+
+@font-face {
+	font-family: 'OpenSans-Regular';
+	src: url('fonts/open-sans/OpenSans-Regular.ttf');
+	format: ('true-type');
+}
+
+@font-face {
+	font-family: 'OpenSans-Italic';
+	src: url('fonts/open-sans/OpenSans-Italic.ttf');
+	format:('true-type');
+}
+
+@font-face {
+	font-family: 'OpenSans-Bold';
+	src: url('fonts/open-sans/OpenSans-Bold.ttf');
+	format:('true-type');
+}
+
+h1 {
+    font-size: 3em;
+    color: #;
+    font-family: DroidSerif-Bold;
+}
+
+h2 {
+    font-size: 1em;
+    color: #;
+    line-height: 1.35em;
+    font-family: OpenSans-Bold;
+}
+
+h3 {
+    font-size: .9em;
+    color: #3c3c3c;
+    font-family: OpenSans-Bold;
+}
+
+h4 {
+    color: #;
+    font-family: OpenSans-Regular;
+    font-size: .85em;
+    line-height: 1.5em;   
+}
+
+.logo {
+    margin-left: 7.5em;
+    width: 100%;
+}
+
+.mainTitle {
+    margin: 0;
+    display: none;
+}
+
+.mainTitle h1 {
+    font-size: 1.5em;
+    letter-spacing: .1em;
+    text-align: center;
+    color: #6f8812;
+}
+
+.tagline {
+    margin: 0 4em;
+    width: 100%;
+}
+
+.tagline h3 {
+    font-size: .9em;
+    width: 100%;
+    font-style: italic;
+    color: #a17805;
+}
+
+.nav {
+    height: 12em;
+    width: 100%;
+    margin:  0 5em 9em 0;
+}
+
+.nav li {
+    font-family: OpenSans-Regular;
+    font-size: .9em;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    line-height: 2.5em;
+    text-align: center;
+    padding: 1em;
+    list-style-type: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #2f3600;
+}
+
+.introHome {
+    background-color: #ccc;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/spaghettiOpt.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.introAbout {
+    height: 25em;
+    width: 100%;
+    margin: 1em 0;
+    background-color: #ccc;
+    background: url('img/wineOpt.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.introMenu {
+    height: 25em;
+    width: 100%;
+    background-color: #ccc;
+    background: url('img/lasagnaOpt.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.contentWrap {
+        width: 90%;
+        margin: 1em;
+}
+
+img {
+        max-width: 40%;
+    }
+
+.menu h3 {
+    line-height: 3em;
+}
+
+.menu h4 {
+    line-height: 1.5em;
+}
+
+.menuIntro h3 {
+    font-family: OpenSans-Italic;
+    line-height: 1.5em;
+}
+
+.about {
+    width: 100%;
+    margin: 1em .5em;
+}
+    
+.aboutTitle {
+    width: 75%;
+    margin: 1em 7em;
+    color: #2b2a2a;
+}
+    
+.about p {
+    font-family: OpenSans-Regular;
+    font-size: .9em;
+    line-height: 1.75em;
+    letter-spacing: .05em;
+    color: #646262;
+    }
+
+.title {
+    width: 100%;
+    margin: 1.5em 8em;
+    color: #6f8812;
+}
+
+.title h2 {
+    font-family: OpenSans-Bold;
+}
+
+.title2 {
+    width: 100%;
+    margin: 1.5em 10em;
+    color: #6f8812;
+}
+
+.title2 h2 {
+    
+}
+
+span {
+    font-family: OpenSans-Italic;
+}
+
+.top {
+    padding: 1em 6em;
+    text-align: center;
+}
+    
+.top a {
+    text-decoration: none;
+    color: #2f3600;
+}
+
+.name {
+        padding: 1em 6em;
+        letter-spacing: .15em;
+        text-align: center;
+    }
+
+.contact {
+    width: 100%;
+    padding: 1em 3em;
+    letter-spacing: .15em;
+    text-align: center;
+ }
+
+/***** Media Queries ******/
+@media (min-width: 700px) {
+    
+    h1 {
+        font-family: DroidSerif-Bold;
+    }
+    
+    h2 {
+        font-size: 1em;
+        color: #;
+        line-height: 1.35em;
+        font-family: OpenSans-Bold;
+    }
+
+    h3 {
+        font-size: .8em;
+        color: #;
+        font-family: OpenSans-Regular;
+    }
+
+    h4 {
+        color: #;
+        font-family: OpenSans-Regular;
+        font-size: .75em;
+        line-height: 1.5em;   
+    }
+    
+    .logo {
+        margin-left: 2em;
+        padding: 0;
+    }
+    
+    .mainTitle {
+        margin: -6em 5em 0 28em;
+        width: 35%;
+        display: block;
+    }
+    
+    .mainTitle h1 {
+        font-size: 1.9em;
+        letter-spacing: .1em;
+        color: #6f8812;
+    }
+    
+    .tagline {
+        display: block;
+        width: 100%;
+        margin: 0 32.5em;
+    }
+    
+    .tagline h3 {
+        font-size: 1em;
+    }
+    
+    .contentWrap {
+        width: 100%;
+        margin: 1em;
+    }
+    
+    .title {
+        margin: 1.5em 0;
+    }
+    
+    .nav {
+        height: 3em;
+        width: 70%;
+        margin: 2em 23em 0;
+    }
+    
+    .nav li {
+        font-family: OpenSans-Regular;
+        font-size: .8em;
+        text-transform: uppercase;
+        letter-spacing: .15em;
+        line-height: 1em;
+        text-align: center;
+        padding: 2em;
+        list-style-type: none;
+        display: inline;
+    }
+
+    .nav a {
+        text-decoration: none;
+    }
+
+    .introHome {
+        width: 100%;
+        margin: 1em 16em;
+        background-color: #ccc;
+    }
+    
+    .introAbout {
+        height: 25em;
+        width: 65%;
+        margin: 1em 16em;
+        background-color: #ccc;
+    }
+    
+    .introMenu {
+        height: 25em;
+        width: 65%;
+        margin: 1em 16em;
+        background-color: #ccc;
+    }
+    
+    .menu {
+        float: left;
+        width: 50%;
+        margin: 0 22em;
+        letter-spacing: .1em;
+    }
+    
+    .about {
+        width: 50%;
+        margin: 3em 21em;
+    }
+    
+    .aboutTitle {
+        width: 25%;
+        margin: 3em 16em;
+    }
+    
+    .about p {
+        font-family: OpenSans-Regular;
+        font-size: .9em;
+        line-height: 1.75em;
+        letter-spacing: .05em;
+    }
+    
+    footer {
+        width: 65%;
+        height: 10em;
+        clear: both;
+        margin-top: 15em;
+        margin: 5em 16em 0;
+    }
+    
+    .top {
+        padding: 1em 2em;
+        text-align: center;
+    }
+    
+    .top a {
+        text-decoration: none;
+    }
+    
+    .name {
+        padding: 2em 22em;
+        letter-spacing: .15em;
+        text-align: center;
+    }
+    
+    .contact {
+        width: 100%;
+        padding: 0 18em;
+        letter-spacing: .15em;
+        text-align: center;
+    }
+    
+}
